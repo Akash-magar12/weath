@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+
+    /* background-color: rgba(255, 255, 255, 0.5); */
+
+
+}
+
+main {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-image: url(./photo-1561484930-998b6a7b22e8.avif);
+    border-image: fill 0 linear-gradient(#0001, #000);
+    background-size: cover;
+
+
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 2vw 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    gap: 1rem;
+}
+
+.degree {
+    font-size: 6.6rem;
+    font-weight: 500;
+}
+
+.city {
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+
+}
+
+.weather img {
+    font-size: 8rem;
+    /* background-color: blue; */
+    background-blend-mode: multiply;
+}
+
+.condition {
+    font-size: 1.2rem;
+    /* background-color: cadetblue; */
+    align-self: center;
+}
+
+.sidebar {
+    width: 28%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: fixed;
+    backdrop-filter: blur(10px);
+    right: -28%;
+    padding: 0 1vw;
+
+}
+
+.searching {
+    width: 100%;
+    background-color: transparent;
+    padding: 9px 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .7vw;
+}
+
+.searching input {
+    width: 80%;
+    outline: none;
+    border: none;
+    font-size: 1.6rem;
+    background-color: transparent;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    ;
+}
+
+.ham {
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: white;
+}
+
+nav h2 {
+    font-size: 2.6rem;
+    font-weight: 500;
+
+}
+
+.left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+nav i {
+    font-size: 2rem;
+}
+
+.close {
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+
+.clo {
+    margin: 10px 0;
+    width: 45px;
+    height: 45px;
+}
+
+.close {
+    position: absolute;
+    right: 7%;
+}
+
+.searching i {
+    font-size: 1.5rem;
+}
+
+.span {
+    width: 44px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.default,
+.weather-details {
+    margin-top: 2rem;
+    display: flex;
+    padding: 0 9px;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 40px;
+
+}
+
+.default h3 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    cursor: pointer;
+
+}
+
+.cloudy,
+.humidity,
+.wind,
+.Country {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.title {
+    font-size: 1.3rem;
+    font-weight: 500;
+
+}
+
+.value {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons i {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+span {
+    width: 50px;
+    display: inline-block;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    background-color: transparent;
+
+}
+
+/* span:hover {
+    background-color: white;
+}
+
+span:hover i {
+    color: black;
+} */
+
+.red {
+    color: white;
+    font-weight: 500;
+    font-size: 2.9rem;
+}
+
+
+
+/* @media (width<=1281px) {
+
+
+
+    .container {
+        height: 85%;
+    }
+
+
+
+
+} */
+
+@media (width<=1025px) {
+
+    .sidebar {
+        width: 50%;
+        right: -50%;
+
+    }
+
+    .close {
+        right: 5%;
+    }
+
+    /* .container {
+        height: 47%;
+    } */
+
+
+
+
+}
+
+/* @media (width<=913px) {
+
+    .container {
+        height: 47%;
+    }
+} */
+/* 
+@media (width<=821px) {
+    .container {
+        height: 56%;
+    }
+} */
+
+
+
+@media (width<=801px) {
+
+    .sidebar {
+        width: 100%;
+        right: -100%;
+
+    }
+
+
+    .close {
+        right: 3%;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .5rem;
+    }
+
+    .degree {
+        font-size: 3rem;
+    }
+
+    .left h2,
+    .left i,
+    .right i,
+    .city {
+        font-size: 1.5rem;
+    }
+
+    .condition {
+        font-size: 1rem;
+    }
+
+    .weather img {
+        width: 3.5rem;
+    }
+
+    .searching input {
+        font-size: 1.1rem;
+    }
+
+    .default h3 {
+        font-size: 1.1rem;
+    }
+
+    .title,
+    .value {
+        font-size: 1.1rem;
+    }
+
+    .value {
+        font-weight: 600;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+
+    /* .container {
+        height: 64%;
+    } */
+
+}
+
+/* @media (width<=541px) {
+    .container {
+        height: 89%;
+    }
+}
+
+@media (width<=432px) {
+
+
+    .container {
+        height: 71%;
+    }
+
+
+}
+
+@media (width<=440px) {
+
+
+
+
+
+    .container {
+        height: 71%;
+    }
+
+
+}
+
+@media (width<=391px) {
+
+
+
+
+
+    .container {
+        height: 77%;
+    }
+
+
+}
+
+
+
+
+@media (width<=376px) {
+
+
+
+
+
+    .container {
+        height: 100%;
+    }
+
+
+}
+
+@media (width<=361px) {
+
+    .container {
+        height: 91%;
+    }
+
+
+}
+
+@media (width<=345px) {
+
+
+
+
+
+    .container {
+        height: 76%;
+    }
+
+
+} */

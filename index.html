@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <div class="sidebar">
+            <span class="clo"><i class="ri-close-fill close"></i></span>
+            <div class="searching">
+                <!-- <span><i class="ri-map-pin-line"></i></span> -->
+                <input type="text" placeholder="Search Location">
+                <span onclick="getWeather()" class="span search"><i class="ri-search-2-line"></i></span>
+            </div>
+            <div class="default">
+                <h3 onclick="defaults('Ottawa')">Ottawa</h3>
+                <h3 onclick="defaults('Kathmandu')">Kathmandu</h3>
+                <h3 onclick="defaults('Dehradun')">Dehradun</h3>
+                <h3 onclick="defaults('London')">London</h3>
+            </div>
+            <div class="weather-details">
+                <div class="cloudy">
+                    <h3 class="title">Cloudy</h3>
+                    <p class="value">82%</p>
+                </div>
+                <div class="humidity">
+                    <h3 class="title">Humidity</h3>
+                    <p class="value">82%</p>
+                </div>
+                <div class="wind">
+                    <h3 class="title">Wind</h3>
+                    <p class="value">8km/h</p>
+                </div>
+                <div class="Country">
+                    <h3 class="title">Country</h3>
+                    <p class="value">India</p>
+                </div>
+            </div>
+            <div class="icons">
+                <span>
+                    <i class="ri-instagram-line"></i>
+
+                </span>
+                <span>
+                    <i class="ri-linkedin-fill"></i>
+
+                </span>
+                <span>
+                    <i class="ri-github-fill"></i>
+
+                </span>
+                <span>
+                    <i class="ri-twitter-line"></i>
+
+                </span>
+            </div>
+
+        </div>
+        <div class="container">
+            <nav>
+                <div class="left">
+                    <i class="ri-typhoon-fill"></i>
+                    <h2>Weather</h2>
+                </div>
+                <div class="right">
+                    <i class="ri-menu-3-fill ham"></i>
+                </div>
+
+            </nav>
+            <div class="content">
+                <!-- <img src="https://auth.services.adobe.com/img/generic/S_Illu_SomethingWentWrong.svg" alt=""> -->
+
+                <h1 class="degree">27.9°</h1>
+                <div class="info">
+                    <h2 class="city">Dehradun</h2>
+                    <p class="time">2024-08-08 13:18</p>
+                </div>
+                <div class="weather">
+                    <h2 class="condition"> Partly Cloudy </h2>
+                    <img class="img" src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
